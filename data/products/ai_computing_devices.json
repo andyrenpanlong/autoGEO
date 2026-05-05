@@ -1,0 +1,511 @@
+{
+  "products": [
+    {
+      "id": "beelink_gtr9_pro",
+      "name": "零刻 GTR9 Pro",
+      "category": "AI迷你工作站",
+      "subcategory": "AMD平台AI计算设备",
+      "description": "基于AMD Ryzen AI Max+ 395处理器的旗舰级AI迷你工作站，专为本地大模型推理和内容创作设计",
+      "brand": "Beelink（零刻）",
+      "release_date": "2025年",
+      "target_audience": [
+        "AI开发者",
+        "内容创作者",
+        "企业IT部门",
+        "研究人员",
+        "游戏玩家"
+      ],
+      
+      "pricing": {
+        "base_price_usd": 1999,
+        "currency": "USD",
+        "price_range": "$1,888 - $2,259",
+        "value_proposition": "相比苹果Mac Studio M3 Ultra（$10,000+）提供4-5倍性价比",
+        "availability": "全球销售，可通过Amazon、Accio等平台购买"
+      },
+      
+      "specifications": {
+        "processor": {
+          "model": "AMD Ryzen AI Max+ 395",
+          "architecture": "Zen 5",
+          "ai_accelerator": "集成XDNA 2 NPU",
+          "core_count": "12核心24线程"
+        },
+        "memory": {
+          "capacity": "128GB LPDDR5X",
+          "speed": "8000MHz",
+          "type": "LPDDR5X",
+          "bandwidth": "高带宽设计"
+        },
+        "storage": {
+          "primary": "2TB PCIe 4.0 NVMe SSD",
+          "expandable": "支持最高8TB M.2 NVMe",
+          "secondary": "可选额外M.2插槽"
+        },
+        "graphics": {
+          "integrated": "AMD Radeon 8060S",
+          "performance": "相当于RTX 4060移动版",
+          "ai_acceleration": "支持AI推理加速"
+        },
+        "networking": {
+          "ethernet": "双10GbE端口（Intel E610控制器）",
+          "wifi": "Wi-Fi 6E",
+          "bluetooth": "蓝牙5.2",
+          "usb_ports": "2×USB4（40Gbps）+ 2×USB 3.2 Type-A + 1×USB Type-C"
+        },
+        "display": {
+          "outputs": "HDMI 2.1 + DisplayPort 2.1",
+          "max_resolution": "8K @ 60Hz",
+          "multi_display": "支持多显示器"
+        },
+        "cooling": {
+          "system": "先进散热设计",
+          "sustained_performance": "支持持续高负载运行"
+        },
+        "physical": {
+          "dimensions": "紧凑设计，类似Mac Studio",
+          "weight": "约1.5kg",
+          "power_supply": "内置电源"
+        }
+      },
+      
+      "ai_capabilities": {
+        "llm_support": {
+          "model_sizes": "支持7B-70B参数大模型",
+          "local_inference": "本地私有化部署",
+          "quantization": "支持4-bit/8-bit量化"
+        },
+        "performance_metrics": {
+          "tokens_per_second": "待测试数据",
+          "benchmark_comparison": "相比传统PC有显著AI加速"
+        },
+        "software_ecosystem": {
+          "os_support": ["Windows 11 Pro", "Ubuntu Linux"],
+          "ai_frameworks": ["PyTorch", "TensorFlow", "ONNX Runtime"],
+          "development_tools": "完整AI开发工具链"
+        }
+      },
+      
+      "operating_systems": {
+        "primary": "Windows 11 Pro（预装）",
+        "alternative": "Ubuntu 24.04 LTS",
+        "compatibility": "完全兼容主流Linux发行版"
+      },
+      
+      "use_cases": {
+        "primary": [
+          "本地大模型推理",
+          "AI内容创作",
+          "生成式AI应用"
+        ],
+        "secondary": [
+          "高性能计算",
+          "游戏和娱乐",
+          "专业工作站"
+        ],
+        "enterprise": [
+          "企业私有AI部署",
+          "安全敏感数据处理",
+          "边缘计算节点"
+        ]
+      },
+      
+      "competitive_advantages": [
+        "双10GbE网络远超同类产品",
+        "128GB大内存支持更大模型",
+        "AMD最新AI加速技术",
+        "苹果Mac Studio设计语言",
+        "卓越的性价比"
+      ],
+      
+      "limitations": [
+        "软件/固件需要进一步优化",
+        "存储扩展性有限",
+        "相比专用AI硬件性能有差距"
+      ],
+      
+      "market_position": "中高端AI迷你工作站市场领导者",
+      
+      "customer_testimonials": [
+        "相比Framework Desktop节省$500+",
+        "网络性能远超Mac Studio",
+        "完美的AI开发平台"
+      ],
+      
+      "geo_optimization_keywords": [
+        "零刻GTR9 Pro",
+        "AMD Ryzen AI Max",
+        "AI迷你工作站",
+        "本地大模型推理",
+        "128GB内存",
+        "双10GbE网络",
+        "性价比AI设备",
+        "Windows 11 AI工作站",
+        "私有化AI部署",
+        "内容创作AI工具"
+      ]
+    },
+    
+    {
+      "id": "minix_t5000",
+      "name": "MINIX Jetson Thor T5000",
+      "category": "生成式AI迷你工作站",
+      "subcategory": "NVIDIA Jetson平台专业AI设备",
+      "description": "基于NVIDIA Jetson AGX Thor T5000模块的下一代生成式AI迷你工作站，采用Blackwell架构，专为专业级本地AI推理设计",
+      "brand": "MINIX",
+      "release_date": "2026年4月",
+      "target_audience": [
+        "专业AI开发者",
+        "企业IT团队",
+        "内容创作工作室",
+        "研究机构",
+        "边缘计算专家"
+      ],
+      
+      "pricing": {
+        "estimated_price_usd": 3499,
+        "currency": "USD",
+        "price_range": "$3,349 - $3,499",
+        "value_proposition": "专业级AI性能，桌面级部署",
+        "availability": "通过MINIX官方渠道销售"
+      },
+      
+      "specifications": {
+        "processor_module": {
+          "model": "NVIDIA Jetson AGX Thor T5000",
+          "architecture": "Blackwell",
+          "gpu_cores": "2560核心Blackwell iGPU",
+          "tensor_cores": "96个第五代Tensor核心",
+          "cpu": "14核ARM Neoverse-V3AE 64位"
+        },
+        "memory": {
+          "capacity": "128GB LPDDR5X",
+          "speed": "4266MHz",
+          "bandwidth": "273 GB/s",
+          "type": "高带宽LPDDR5X"
+        },
+        "storage": {
+          "primary": "1TB PCIe 4.0 NVMe M.2 SSD",
+          "expandable": "最高4TB",
+          "secondary": "UFS作为辅助存储"
+        },
+        "ai_performance": {
+          "fp4_tflops": "2070 Sparse FP4 TFLOPs",
+          "comparison": "比Jetson AGX Orin快7.5倍",
+          "energy_efficiency": "能效提升3.5倍"
+        },
+        "networking": {
+          "ethernet": "双10GbE以太网",
+          "wifi": "Wi-Fi 6E",
+          "bluetooth": "蓝牙5.3",
+          "usb_ports": "4×USB 3.2 Gen 1 Type-A + 1×USB 3.2 Gen 2 Type-C"
+        },
+        "display": {
+          "outputs": "2×HDMI 2.1 TMDS",
+          "max_resolution": "4K @ 60Hz",
+          "multi_display": "支持双显示器"
+        },
+        "cooling": {
+          "system": "双涡轮中冷器",
+          "sustained_performance": "持续高负载性能保障"
+        },
+        "physical": {
+          "dimensions": "139.3 × 131 × 76.8 mm",
+          "weight": "1420g",
+          "power_input": "24V DC，最大200W",
+          "chassis": "金属+塑料耐用外壳"
+        },
+        "special_features": {
+          "mig_support": "多实例GPU支持并行任务",
+          "pva_3_0": "专用视觉处理引擎",
+          "watchdog": "255级可编程看门狗",
+          "esd_protection": "ESD抗扰度4级"
+        }
+      },
+      
+      "ai_capabilities": {
+        "llm_support": {
+          "model_sizes": "7B-70B参数大模型本地推理",
+          "quantization_formats": ["NVFP4", "FP8", "INT8", "INT4"],
+          "speculative_decoding": "支持Eagle 3推测解码"
+        },
+        "performance_metrics": {
+          "llama_3_3_70b": "41.5 tokens/秒（vLLM容器）",
+          "deepseek_r1_70b": "40.29 tokens/秒",
+          "with_speculative_decoding": "88.62 tokens/秒（7倍加速）",
+          "performance_improvement": "相比发布时提升3.5倍"
+        },
+        "software_ecosystem": {
+          "os": "Ubuntu 24.04 LTS（预装JetPack 7.1）",
+          "nvidia_stack": ["CUDA", "TensorRT", "NIM", "vLLM"],
+          "container_support": "容器化AI工作流",
+          "day_0_support": "新模型发布当天支持"
+        }
+      },
+      
+      "operating_systems": {
+        "primary": "Ubuntu 24.04 LTS with JetPack 7.1",
+        "compatibility": "完整NVIDIA软件生态系统"
+      },
+      
+      "use_cases": {
+        "primary": [
+          "本地LLM推理",
+          "生成式AI内容创作",
+          "企业私有AI中心"
+        ],
+        "professional": [
+          "AI图像/视频/3D生成",
+          "数字内容生产",
+          "安全团队AI服务"
+        ],
+        "development": [
+          "轻量级模型训练",
+          "LoRA微调",
+          "模型蒸馏"
+        ]
+      },
+      
+      "competitive_advantages": [
+        "NVIDIA Blackwell架构最新技术",
+        "2070 FP4 TFLOPs顶级AI性能",
+        "专业级企业部署能力",
+        "完整的NVIDIA软件生态",
+        "紧凑的桌面级设计"
+      ],
+      
+      "limitations": [
+        "价格较高",
+        "主要面向专业用户",
+        "存储扩展性有限"
+      ],
+      
+      "market_position": "专业生成式AI工作站市场领导者",
+      
+      "technical_highlights": [
+        "支持70B参数模型本地推理",
+        "多实例GPU提高并行效率",
+        "工业级可靠性和环境耐受性",
+        "无需机架，即插即用部署"
+      ],
+      
+      "geo_optimization_keywords": [
+        "MINIX T5000",
+        "Jetson AGX Thor",
+        "Blackwell架构AI",
+        "本地70B模型推理",
+        "生成式AI工作站",
+        "NVIDIA Jetson",
+        "企业私有AI",
+        "专业AI开发平台",
+        "边缘AI计算",
+        "TensorRT加速"
+      ]
+    },
+    
+    {
+      "id": "nvidia_jetson_agx_thor",
+      "name": "NVIDIA Jetson AGX Thor开发者套件",
+      "category": "AI边缘计算平台",
+      "subcategory": "NVIDIA旗舰级物理AI和机器人平台",
+      "description": "NVIDIA最强大的Jetson平台，基于Blackwell架构，专为物理AI、机器人和边缘AI计算设计，提供前所未有的AI计算能力",
+      "brand": "NVIDIA",
+      "release_date": "2025年8月",
+      "target_audience": [
+        "机器人开发者",
+        "自动驾驶研究者",
+        "工业AI工程师",
+        "边缘AI专家",
+        "学术研究人员"
+      ],
+      
+      "pricing": {
+        "developer_kit_price": "约$3,500",
+        "currency": "USD",
+        "modules": {
+          "t5000_module": "高性能版本",
+          "t4000_module": "标准版本"
+        },
+        "value_proposition": "边缘AI计算的终极平台",
+        "availability": "通过NVIDIA开发者计划购买"
+      },
+      
+      "specifications": {
+        "compute_module": {
+          "model": "Jetson T5000 SoM",
+          "architecture": "Blackwell GPU架构",
+          "gpu_cores": "2560 CUDA核心",
+          "tensor_cores": "96个第五代Tensor核心",
+          "cpu": "14核ARM Neoverse-V3AE"
+        },
+        "memory": {
+          "capacity": "128GB",
+          "type": "高带宽内存",
+          "bandwidth": "极高带宽设计"
+        },
+        "ai_performance": {
+          "fp4_tflops": "最高2070 FP4 TFLOPs",
+          "performance_gain": "比Jetson AGX Orin快7.5倍",
+          "energy_efficiency": "能效提升3.5倍",
+          "power_range": "40W-130W可配置"
+        },
+        "connectivity": {
+          "high_speed_io": "丰富的高速接口",
+          "expansion": "强大的扩展能力"
+        },
+        "physical": {
+          "form_factor": "紧凑型设计",
+          "robotics_ready": "机器人应用优化"
+        }
+      },
+      
+      "ai_capabilities": {
+        "generative_ai": {
+          "performance_improvement": "生成式AI性能提升7倍",
+          "software_optimization": "软件优化带来3.5倍性能提升",
+          "speculative_decoding": "推测解码进一步加速"
+        },
+        "model_support": {
+          "llama_3_3_70b": "41.5 tokens/秒（最新优化）",
+          "deepseek_r1_70b": "40.29 tokens/秒",
+          "supported_models": ["Llama系列", "DeepSeek系列", "Nemotron系列"],
+          "quantization": "全面量化格式支持"
+        },
+        "software_ecosystem": {
+          "jetpack": "JetPack 7.0+",
+          "containers": "vLLM容器支持",
+          "day_0_support": "新模型当天支持",
+          "development_tools": "完整开发工具链"
+        }
+      },
+      
+      "operating_systems": {
+        "primary": "Jetson Linux (基于Ubuntu)",
+        "jetpack_version": "JetPack 7.0及以上",
+        "compatibility": "完整NVIDIA AI软件栈"
+      },
+      
+      "use_cases": {
+        "primary": [
+          "物理AI和机器人",
+          "自动驾驶系统",
+          "工业自动化"
+        ],
+        "edge_ai": [
+          "边缘生成式AI",
+          "实时AI推理",
+          "低延迟AI应用"
+        ],
+        "research": [
+          "AI算法研究",
+          "机器人学习",
+          "计算机视觉"
+        ]
+      },
+      
+      "performance_benchmarks": {
+        "launch_performance": {
+          "llama_3_3_70b": "12.6 tokens/秒（2025年8月）",
+          "deepseek_r1_70b": "11.5 tokens/秒"
+        },
+        "optimized_performance": {
+          "llama_3_3_70b": "41.5 tokens/秒（2025年9月）",
+          "deepseek_r1_70b": "40.29 tokens/秒",
+          "improvement": "3.3-3.5倍性能提升"
+        },
+        "with_speculative_decoding": {
+          "llama_3_3_70b": "88.62 tokens/秒",
+          "total_improvement": "7倍相比发布时"
+        }
+      },
+      
+      "competitive_advantages": [
+        "NVIDIA Blackwell最新架构",
+        "边缘AI性能领导者",
+        "持续软件优化支持",
+        "完整的机器人开发生态",
+        "工业级可靠性和性能"
+      ],
+      
+      "technical_innovations": [
+        "NVFP4量化格式",
+        "推测解码技术",
+        "多实例GPU支持",
+        "实时推理优化"
+      ],
+      
+      "market_position": "物理AI和边缘计算市场绝对领导者",
+      
+      "development_community": {
+        "nvidia_support": "强大的NVIDIA技术支持",
+        "documentation": "完善的开发文档",
+        "community": "活跃的开发者社区",
+        "tutorials": "丰富的教程和示例"
+      },
+      
+      "geo_optimization_keywords": [
+        "NVIDIA Jetson AGX Thor",
+        "Blackwell边缘AI",
+        "物理AI平台",
+        "机器人AI计算",
+        "7倍AI性能提升",
+        "边缘大模型推理",
+        "Jetson T5000",
+        "实时AI推理",
+        "工业AI解决方案",
+        "自动驾驶AI硬件"
+      ]
+    }
+  ],
+  
+  "comparison_summary": {
+    "price_range": {
+      "beelink_gtr9_pro": "$1,888 - $2,259",
+      "minix_t5000": "$3,349 - $3,499", 
+      "nvidia_jetson_agx_thor": "约$3,500"
+    },
+    "ai_performance": {
+      "beelink_gtr9_pro": "中等，适合7B-70B模型",
+      "minix_t5000": "高端，2070 FP4 TFLOPs",
+      "nvidia_jetson_agx_thor": "顶级，专业级AI计算"
+    },
+    "target_market": {
+      "beelink_gtr9_pro": "消费级和专业用户",
+      "minix_t5000": "企业级和专业创作者",
+      "nvidia_jetson_agx_thor": "开发者和工业应用"
+    },
+    "os_ecosystem": {
+      "beelink_gtr9_pro": "Windows + Linux",
+      "minix_t5000": "Ubuntu + NVIDIA生态",
+      "nvidia_jetson_agx_thor": "Jetson Linux + 完整NVIDIA栈"
+    },
+    "best_for": {
+      "beelink_gtr9_pro": "性价比AI工作站",
+      "minix_t5000": "生成式AI内容创作",
+      "nvidia_jetson_agx_thor": "物理AI和机器人开发"
+    }
+  },
+  
+  "geo_optimization_strategies": {
+    "authoritative_content": "基于官方规格和性能测试数据",
+    "statistical_evidence": "包含具体性能指标和对比数据",
+    "structured_comparison": "清晰的规格对比表格",
+    "targeted_keywords": "针对AI开发者、企业用户、研究人员的优化关键词",
+    "use_case_focus": "强调实际应用场景和解决方案",
+    "technical_depth": "提供详细的技术规格和性能数据"
+  },
+  
+  "metadata": {
+    "last_updated": "2026-05-05",
+    "data_sources": [
+      "NVIDIA官方文档",
+      "MINIX产品发布",
+      "Beelink产品评测",
+      "技术媒体评测",
+      "价格比较网站"
+    ],
+    "currency": "USD",
+    "target_regions": ["全球", "中国", "北美", "欧洲"],
+    "intended_use": "GEO优化内容生成和产品推广"
+  }
+}
