@@ -28,13 +28,13 @@
 
 ## 🚀 快速开始
 
-### 方法一：使用Docker（推荐）
+### 方法一：使用Docker完整版（推荐网络良好时）
 ```bash
 # 1. 克隆项目
 git clone https://github.com/andyrenpanlong/autoGEO.git
 cd autoGEO
 
-# 2. 启动所有服务
+# 2. 启动所有服务（包含监控）
 ./start.sh docker
 
 # 3. 访问服务
@@ -43,7 +43,34 @@ cd autoGEO
 #   Grafana监控: http://localhost:3000 (admin/admin)
 ```
 
-### 方法二：本地开发环境
+### 方法二：使用Docker简化版（网络不好时）
+```bash
+# 1. 克隆项目
+git clone https://github.com/andyrenpanlong/autoGEO.git
+cd autoGEO
+
+# 2. 启动核心服务（不包含监控）
+./start.sh docker-simple
+
+# 3. 访问服务
+#   主应用: http://localhost:8000
+#   API文档: http://localhost:8000/docs
+```
+
+### 方法三：纯开发环境（不使用Docker）
+```bash
+# 1. 克隆项目
+git clone https://github.com/andyrenpanlong/autoGEO.git
+cd autoGEO
+
+# 2. 启动纯开发环境
+./start_dev_only.sh
+
+# 3. 访问API文档
+#   http://localhost:8000/docs
+```
+
+### 方法四：传统开发环境
 ```bash
 # 1. 克隆项目
 git clone https://github.com/andyrenpanlong/autoGEO.git
@@ -58,28 +85,6 @@ cp .env.example .env
 
 # 4. 访问API文档
 #   http://localhost:8000/docs
-```
-
-### 方法三：Python虚拟环境
-```bash
-# 1. 克隆项目
-git clone https://github.com/andyrenpanlong/autoGEO.git
-cd autoGEO
-
-# 2. 创建虚拟环境
-python3 -m venv venv
-source venv/bin/activate  # Linux/Mac
-# 或 venv\Scripts\activate  # Windows
-
-# 3. 安装依赖
-pip install -r requirements.txt
-
-# 4. 配置环境变量
-cp .env.example .env
-# 编辑.env文件，配置API密钥等
-
-# 5. 启动服务
-uvicorn src.main:app --reload --host 0.0.0.0 --port 8000
 ```
 
 ## API文档

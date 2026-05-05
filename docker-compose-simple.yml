@@ -1,0 +1,74 @@
+# 简化版Docker Compose配置，只包含核心服务
+
+services:
+  # 主应用服务
+  app:
+    build: .
+    ports:
+      - "8000:8000"
+    environment:
+      - APP_ENV=development
+      - DATABASE_URL=postgresql://geo_user:geo_password@db:5432/geo_promotion
+      - REDIS_URL=redis://redis:6379/0
+    volumes:
+      - ./logs:/app/logs
+      - ./data:/app/data
+    depends_on:
+      - db
+      - redis
+    restart: unless-stopped
+    networks:
+      - geo-network
+
+  # PostgreSQL数据库
+  db:
+    image: postgres:15-alpine
+    environment:
+      - POSTGRES_USER=geo_user
+      - POSTGRES_PASSWORD=geo_password
+      - POSTGRES_DB=geo_promotion
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+      - ./config/init.sql:/docker-entrypoint-initdb.d/init.sql
+    ports:
+      - "5432:5432"
+    restart: unless-stopped
+    networks:
+      - geo-network
+
+  # Redis缓存
+  redis:
+    image: redis:7-alpine
+    ports:
+      - "6379:6379"
+    volumes:
+      - redis_data:/data
+    restart: unless-stopped
+    networks:
+      - geo-network
+
+  # Celery Worker（任务队列）
+  worker:
+    build: .
+    command: celery -A src.tasks.celery_app worker --loglevel=info
+    environment:
+      - APP_ENV=development
+      - CELERY_BROKER_URL=redis://redis:6379/0
+      - CELERY_RESULT_BACKEND=redis://redis:6379/0
+    volumes:
+      - ./logs:/app/logs
+      - ./data:/app/data
+    depends_on:
+      - redis
+      - db
+    restart: unless-stopped
+    networks:
+      - geo-network
+
+volumes:
+  postgres_data:
+  redis_data:
+
+networks:
+  geo-network:
+    driver: bridge

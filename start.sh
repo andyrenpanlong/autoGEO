@@ -134,6 +134,28 @@ start_all_services() {
     echo "  - Grafana: http://localhost:3000 (用户名: admin, 密码: admin)"
 }
 
+# 启动简化服务（只包含核心服务）
+start_simple_services() {
+    print_info "启动简化服务（只包含核心服务）..."
+    
+    if [[ ! -f "docker-compose-simple.yml" ]]; then
+        print_error "docker-compose-simple.yml文件不存在"
+        exit 1
+    fi
+    
+    docker-compose -f docker-compose-simple.yml up -d
+    
+    print_success "简化服务已启动"
+    echo ""
+    echo "服务访问地址:"
+    echo "  - 主应用: http://localhost:8000"
+    echo "  - API文档: http://localhost:8000/docs"
+    echo "  - 数据库: localhost:5432"
+    echo "  - Redis: localhost:6379"
+    echo ""
+    echo "注意: 简化版不包含监控服务（Prometheus/Grafana）"
+}
+
 # 停止所有服务
 stop_all_services() {
     print_info "停止所有服务..."
@@ -141,8 +163,11 @@ stop_all_services() {
     if [[ -f "docker-compose.yml" ]]; then
         docker-compose down
         print_success "服务已停止"
+    elif [[ -f "docker-compose-simple.yml" ]]; then
+        docker-compose -f docker-compose-simple.yml down
+        print_success "简化服务已停止"
     else
-        print_warning "docker-compose.yml文件不存在"
+        print_warning "docker-compose配置文件不存在"
     fi
 }
 
@@ -179,18 +204,20 @@ show_help() {
     echo "使用方法: ./start.sh [命令]"
     echo ""
     echo "命令:"
-    echo "  dev         启动开发服务器"
-    echo "  prod        启动生产服务器"
-    echo "  docker      使用Docker Compose启动所有服务"
-    echo "  stop        停止所有服务"
-    echo "  init        初始化项目（安装依赖、初始化数据库）"
-    echo "  test        运行测试"
-    echo "  lint        运行代码检查"
-    echo "  help        显示此帮助信息"
+    echo "  dev           启动开发服务器"
+    echo "  prod          启动生产服务器"
+    echo "  docker        使用Docker Compose启动所有服务（完整版）"
+    echo "  docker-simple 使用Docker Compose启动核心服务（简化版）"
+    echo "  stop          停止所有服务"
+    echo "  init          初始化项目（安装依赖、初始化数据库）"
+    echo "  test          运行测试"
+    echo "  lint          运行代码检查"
+    echo "  help          显示此帮助信息"
     echo ""
     echo "示例:"
-    echo "  ./start.sh dev      # 启动开发服务器"
-    echo "  ./start.sh docker   # 使用Docker启动所有服务"
+    echo "  ./start.sh dev            # 启动开发服务器"
+    echo "  ./start.sh docker         # 使用Docker启动所有服务"
+    echo "  ./start.sh docker-simple  # 使用Docker启动核心服务（网络不好时使用）"
 }
 
 # 主函数
@@ -220,6 +247,11 @@ main() {
             check_command "docker"
             check_command "docker-compose"
             start_all_services
+            ;;
+        "docker-simple")
+            check_command "docker"
+            check_command "docker-compose"
+            start_simple_services
             ;;
         "stop")
             stop_all_services
